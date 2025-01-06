@@ -1,7 +1,7 @@
-SRC = $(wildcard *.c)
-OBJ = ${SRC:.c=.o}
-OUT = clox
-C = gcc
+SRC := $(wildcard *.c)
+OBJ := ${SRC:.c=.o}
+OUT := clox
+CC := gcc
 
 $(OUT): $(OBJ)
 	@$(CC) $^ -o $@

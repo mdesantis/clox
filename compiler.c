@@ -101,6 +101,11 @@ static void endCompiler()
   emitReturn();
 }
 
+static void expression()
+{
+  // What goes here?
+}
+
 bool compile(const char *source, Chunk *chunk)
 {
   initScanner(source);
